@@ -1,7 +1,5 @@
 {
   "homepage": "https://FAREENA221.github.io/react-dashboard",
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d build",
   "name": "react-dashboard",
   "private": true,
   "version": "0.0.0",
@@ -9,6 +7,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
